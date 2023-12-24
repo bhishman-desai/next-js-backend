@@ -7,9 +7,12 @@ type Feedback = {
 };
 
 export const POST = async (request: Request) => {
-  const data: Feedback = await request.json();
+  /* request.json() gets the data from the body */
+  const bodyData: Feedback = await request.json();
 
-  const { name, email, message } = data;
+  /* Once we get the bodyData, we can perform operations like storing it in a database over here */
+
+  const { name, email, message } = bodyData;
 
   return NextResponse.json({ name, email, message });
 };
