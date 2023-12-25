@@ -5,10 +5,18 @@ const DATA_SOURCE_URL: string = "https://jsonplaceholder.typicode.com/todos";
 const API_KEY: string = process.env.DATA_API_KEY as string;
 
 export const GET = async (request: Request) => {
+  const origin = request.headers.get("origin");
   const response: Response = await fetch(DATA_SOURCE_URL);
   const data: TODO[] = await response.json();
 
-  return NextResponse.json(data);
+  /* After defining the allowed origins in the middleware, 
+       we also need to make sure that we are passing appropriate origins in 'Access-Control-Allow-Origin' headers */
+  return new NextResponse(JSON.stringify(data), {
+    headers: {
+      "Access-Control-Allow-Origin": origin || "*",
+      "Content-Type": "application/json",
+    },
+  });
 };
 
 export const POST = async (request: Request) => {
