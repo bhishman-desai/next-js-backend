@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next JS Backend
 
-## Getting Started
+## Project Description
 
-First, run the development server:
+**Next JS Backend** is a straightforward repository crafted to facilitate the exploration and comprehension of backend concepts within the Next.js framework. This project serves as a foundational learning ground, enabling the implementation of essential backend functionalities in a Next.js environment.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Key Concepts Explored:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Defining Basic Routes and HTTP Calls:** Establishing fundamental routes and making HTTP calls within the Next.js backend to handle various functionalities.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Familiarizing with NextRequest and NextResponse:** Gaining proficiency in working with NextRequest and NextResponse objects, pivotal components for handling incoming requests and generating responses.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Accessing Dynamic Data from URL:** Learning how to dynamically fetch and handle data from the URL, allowing for flexible and parameterized routing within the Next.js backend.
 
-## Learn More
+4. **GET, POST, PUT, and DELETE Calls (Rest API):** Implementing RESTful API functionality by incorporating common HTTP methods like GET, POST, PUT, and DELETE.
 
-To learn more about Next.js, take a look at the following resources:
+5. **Middleware:** Understanding and implementing middleware to execute additional processing logic between the incoming request and the ultimate response.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+6. **Request Limiter:** Implementing a request limiter to control and manage the rate of incoming requests, enhancing the backend's security and stability.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+7. **CORS Allowed Origins:** Configuring Cross-Origin Resource Sharing (CORS) to specify which origins are permitted to access resources from the server.
 
-## Deploy on Vercel
+8. **Wrapper to HTTP Calls:** Creating a wrapper to streamline and encapsulate HTTP calls, promoting code reusability and maintainability.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Get Involved:
+
+Feel free to contribute, share insights, or suggest improvements to the **Next JS Backend** project. Feel free to add new concepts in Next JS future updates.
+
+Let's delve into Next.js backend concepts together and elevate our understanding of server-side functionalities!
